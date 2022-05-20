@@ -7,7 +7,7 @@
  * greet("Hamza") logs "Hello Hamza"
  */
 void greet(String name) {
-  // Your code here
+  print("hello " + name);
 }
 
 /**
@@ -20,7 +20,7 @@ void greet(String name) {
  * isOdd(10) -> false
  */
 bool isOdd(int n) {
-  // Your code here
+  return n % 2 == 0 ? false : true;
 }
 
 /**
@@ -33,7 +33,14 @@ bool isOdd(int n) {
  * oddsSmallerThan(15) -> 7
  */
 int oddsSmallerThan(int n) {
-  // Your code here
+  int sum = 0;
+
+  for (int i = 0; i < n; i++) {
+    if (isOdd(i)) {
+      sum++;
+    }
+  }
+  return sum;
 }
 
 /**
@@ -47,5 +54,12 @@ int oddsSmallerThan(int n) {
  * squareOrDouble(9) -> 81
  */
 int squareOrDouble(int n) {
-  // Your code here
+  return isOdd(n) ? n * n : n * 2;
+}
+
+void main() {
+  greet("Zeinab");
+  print(isOdd(2));
+  print(oddsSmallerThan(15));
+  print(squareOrDouble(5));
 }
