@@ -1,10 +1,10 @@
 /**
  * greet(name):
- * - receives a name
- * - logs "Hello <name>"
+ * - receives a name,
+ * - prints "Hello <name>"
  *
  * e.g.
- * greet("Hamza") logs "Hello Hamza"
+ * greet("Hamza") => prints "Hello Hamza"
  */
 void greet(String name) {
   // Your code here
@@ -12,8 +12,8 @@ void greet(String name) {
 
 /**
  * isOdd(n):
- * - receives a number n
- * - returns true if it's odd, false otherwise
+ * - receives a number n,
+ * - returns true if n is odd, false otherwise.
  *
  * e.g.
  * isOdd(7) -> true
@@ -25,8 +25,8 @@ bool isOdd(int n) {
 
 /**
  * oddsSmallerThan(n):
- * - receives a number n
- * - returns the number of ODD numbers smaller than n
+ * - receives a number n,
+ * - returns the number of ODD numbers smaller than n.
  *
  * e.g.
  * oddsSmallerThan(7) -> 3
@@ -38,9 +38,9 @@ int oddsSmallerThan(int n) {
 
 /**
  * squareOrDouble(n):
- * - receives a number n
- * - returns its square if it's odd
- * - returns its double if it's even
+ * - receives a number n,
+ * - returns n's square if n is odd,
+ * - returns n's double if n is even.
  *
  * e.g.
  * squareOrDouble(16) -> 32
